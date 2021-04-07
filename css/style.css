@@ -120,6 +120,16 @@
 .skill__container {
   flex: 1;
 }
+.skill__container .progress-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+.skill__container .progress-title div {
+  font-size: 20px;
+  color: #1e1e1e;
+}
 
 .rotate {
   margin-top: 70px;
@@ -153,6 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .slider .card {
   margin: 10px;
@@ -520,6 +531,26 @@
 
 footer {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .next .expertise {
+    padding: 40px;
+  }
+
+  .container .list-head {
+    margin-top: 50px;
+  }
+  .container .form-element {
+    transform: translateY(0);
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .info .col-12 {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -119,6 +119,16 @@
 }
 .skill__container{
     flex: 1;
+    .progress-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+        div {
+            font-size: 20px;
+            color: #1e1e1e;
+        }
+    }
 }   
 
 .rotate {
@@ -328,6 +338,7 @@
         align-items: center;
     }
 }
+
 .info {
     height: 300px;
     .motto {
@@ -407,6 +418,7 @@
       }
     }
 }
+
 .container {
    
     .form-element {
@@ -555,5 +567,28 @@
     
     footer {
         text-align: center;
+    }
+    @media only screen and (max-width:768px){
+        .next {
+            .expertise {
+                padding: 40px;
+            }
+        }
+        .container {
+            .list-head {
+                margin-top: 50px;
+            }
+            .form-element {
+                transform: translateY(0);
+                width: 100%;
+                box-shadow: none;
+            }
+        }
+        .info {
+            .col-12 {
+               padding: 0;
+               margin: 0;
+            }
+        }
     }
   
