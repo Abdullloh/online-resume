@@ -17,7 +17,7 @@ $('document').ready(function(){
 		strings:["I'm Abdulloh Irgashev"," Front End Developer" ],
 		typeSpeed: 50,
 		backSpeed:50,
-		autoInsertCss: true,
+		showCursor:false,
 		loop:true
 	  });
 });
