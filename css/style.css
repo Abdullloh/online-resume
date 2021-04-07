@@ -1,3 +1,10 @@
+#typed-strings .animate {
+  color: red !important;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
 .section1 {
   min-height: 100%;
   background: url(../img/bodybg.png);
@@ -59,6 +66,19 @@
 .row .col-xl-5 img {
   object-fit: cover;
 }
+.row .col-12 .about {
+  font-size: 40px;
+  color: #3d4354;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.row .col-12 .btn {
+  margin-top: 20px;
+}
+.row .col-12 .buttons {
+  margin-left: 80px;
+  background-color: #3e4356;
+}
 .row .col-12 .d-flex {
   margin-left: -78px;
   margin-top: 70px;
@@ -84,17 +104,11 @@
   padding: 7px 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.row .col-12 button:focus {
+  box-shadow: none;
+}
 .row .col-12 p {
   color: #a6acc1;
-}
-.row .col-12 h1 {
-  color: #3e4356;
-  font-size: 40px;
-  font-weight: 800;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.row .col-12 h1 span {
-  color: #ff013d;
 }
 
 .skill {
@@ -124,6 +138,15 @@
 .next {
   margin-top: 60px;
   padding: 100px 0;
+}
+
+.next .expertise {
+  position: relative;
+  bottom: 50px;
+}
+.next .expertise h1 {
+  font-size: 40px;
+  color: #3d4354;
 }
 
 .slider {
@@ -191,8 +214,16 @@
     object-fit: cover;
   }
 }
+.title {
+  font-size: 25px;
+  text-align: center;
+}
+
 .heading {
   text-align: center;
+  color: #3e4356;
+  position: relative;
+  bottom: 50px;
 }
 
 .p-5 {
@@ -204,6 +235,9 @@
   border: 0px solid #dee3f4;
   border-radius: 0;
   margin-top: 20px;
+}
+.p-5 .card .card-title {
+  font-size: 18px;
 }
 .p-5 .card:hover {
   box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.2);
@@ -219,6 +253,10 @@
 }
 .news-section .heading {
   margin-bottom: 15px;
+}
+.news-section .heading h1 {
+  font-size: 40px;
+  color: #3e4356;
 }
 .news-section .row {
   justify-content: center;
@@ -266,6 +304,222 @@
   z-index: 1;
   right: -25px;
   transition: 0.5s;
+}
+
+.section-idea {
+  text-align: center;
+  padding: 100px 0;
+}
+.section-idea .hire h4 {
+  font-size: 23px;
+  position: relative;
+  bottom: 20px;
+  color: #424758;
+}
+.section-idea .hire h3 {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #424758;
+}
+.section-idea .btn-secondary {
+  margin-top: 12px;
+  padding: 6px 22px;
+  border-radius: 0px;
+  font-size: 12px;
+  align-items: center;
+}
+
+.info {
+  height: 300px;
+}
+.info .motto {
+  padding: 170px 0;
+  margin-left: 100px;
+}
+.info .motto h3 {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #7f85a0;
+  text-shadow: 0px 0px 2px #7f85a0;
+}
+.info .motto h3 .bi {
+  left: 60px;
+  top: 3px;
+  position: relative;
+  animation-name: arrow-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow-right {
+  from {
+    display: none;
+    left: 50px;
+    top: 3px;
+  }
+  to {
+    position: absolute;
+    left: 150px;
+    top: 3px;
+  }
+}
+.info .motto h3 span {
+  color: black;
+  position: relative;
+}
+.info .motto h3 span::after {
+  content: "";
+  height: 2px;
+  width: 30px;
+  background: #7f85a0;
+  position: absolute;
+  left: 190px;
+  top: 16px;
+}
+
+.contact-section .grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.contact-section .list-head {
+  list-style: none;
+}
+.contact-section .list-head .list-items {
+  margin-bottom: 4px;
+  position: relative;
+  color: #80848f;
+  cursor: pointer;
+}
+.contact-section .list-head .list-items::before {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background: #80848f;
+  position: absolute;
+  top: 12px;
+  left: -20px;
+}
+.contact-section .list-head .list-items:hover, .contact-section .list-head .list-items::before {
+  color: black;
+}
+
+.container .form-element {
+  width: 380px;
+  background: #f6f7fe;
+  box-shadow: 0px 4px 35px #cfd7f7;
+  margin: auto;
+  transform: translateY(-50%);
+}
+.container .form-element .form {
+  padding: 40px 45px;
+}
+.container .form-element .form label {
+  color: #7f85a0;
+}
+.container .form-element .form-label {
+  position: relative;
+  left: 11px;
+  top: 10px;
+}
+.container .form-element .button {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .form-element .button .bubbly-button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 0;
+  padding: 8px 25px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #3e4356;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px #3e4356;
+}
+.container .form-element .button .bubbly-button:focus {
+  outline: 0;
+}
+.container .form-element .button .bubbly-button:before, .container .form-element .button .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.container .form-element .button .bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, transparent 20%, #3e4356 20%, transparent 30%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3e4356 15%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.container .form-element .button .bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, transparent 10%, #3e4356 15%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%), radial-gradient(circle, #3e4356 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.container .form-element .button .bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #333747;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.container .form-element .button .bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.container .form-element .button .bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.form-control {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+  border-color: #a8aec2;
+}
+.form-control:focus {
+  box-shadow: none;
+  background: transparent;
+}
+
+footer {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
