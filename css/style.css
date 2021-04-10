@@ -540,7 +540,7 @@ footer {
   text-align: center;
 }
 
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 768px) {
   body {
     margin: 0;
     padding: 0;
