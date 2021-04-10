@@ -78,8 +78,9 @@ body {
   font-family: sans-serif;
   font-weight: 600;
 }
-.row .col-12 .btn {
-  margin-top: 20px;
+.row .col-12 .btn:hover {
+  background: black;
+  color: white;
 }
 .row .col-12 .buttons {
   margin-left: 80px;
